@@ -1,37 +1,25 @@
-package P_A;
+package SM;
+
 
 /**
  * @author Jztice5
- * @date 2022年01月19日 14:33
+ * @date 2022年01月30日 18:21
  */
 
 public class Student {
-    //学号
-    private String id;
-    //姓名
     private String name;
-    //年龄
-    private String age;
-    //地址
-    private String address;
+    private String id;
+    private String sex;
+    private int age;
 
     public Student() {
     }
 
-    //创建构造方法，将对象的数据接收到本类的成员变量！！！
-    public Student(String id, String name, String age, String address) {
-        this.id = id;
+    public Student(String name, String id, String sex, int age) {
         this.name = name;
-        this.age = age;
-        this.address = address;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
         this.id = id;
+        this.sex = sex;
+        this.age = age;
     }
 
     public String getName() {
@@ -42,20 +30,29 @@ public class Student {
         this.name = name;
     }
 
-    public String getAge() {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
 }
